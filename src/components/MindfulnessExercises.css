@@ -1,92 +1,90 @@
 @keyframes rainbow {
-    0% { color: red; }
-    14% { color: orange; }
-    28% { color: yellow; }
-    42% { color: green; }
-    57% { color: blue; }
-    71% { color: indigo; }
-    85% { color: violet; }
-    100% { color: red; }
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-  
-  body {
-    background: linear-gradient(to right, #3494e6, #ec6ead); 
-    color: white; 
-    font-family: 'Quicksand', sans-serif; 
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
-  }
-  
-  .page-container {
-    position: relative;
-    z-index: 1;
-    background: transparent; 
-  }
-  
-  .mindfulness-container {
-    text-align: center;
-    padding: 20px;
-    color: black; 
-    font-family: 'Roboto', sans-serif; 
-    margin-top: 60px; 
-  }
-  
-  .mindfulness-title {
-    font-size: 3rem; 
-    margin-bottom: 30px; 
-    animation: rainbow 5s infinite; 
-    font-family: 'Lobster', cursive; 
-  }
-  
-  .mindfulness-text-container {
-    max-height: 300px; 
-    overflow-y: auto; 
-    text-align: justify; 
-    margin: 0 auto; 
-    max-width: 80%; 
-    padding: 20px; 
-    font-size: 1.2rem; 
-    line-height: 1.6; 
-    border: 2px solid #ddd; 
-    border-radius: 10px; 
-    background-color: #fff; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .paragraph-heading {
-    font-size: 1.3rem; 
-    font-weight: bold; 
-    margin-bottom: 10px; 
-  }
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+}
 
-  .pointer {
-    font-weight: bold;
-    color: #888;
-    margin-right: 5px;
-  }
-  
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
-    padding: 10px 0; 
-    z-index: 100; 
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px; 
-    font-size: 1.2rem; 
-  }
-  
-  .navbar a:hover {
-    color: #3494e6; 
-  }
-  
+body {
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.page-container {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+}
+
+.mindfulness-container {
+  text-align: center;
+  padding: 20px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px; /* Adjusted margin */
+}
+
+.mindfulness-title {
+  font-size: 3rem;
+  margin-bottom: 20px; /* Adjusted margin */
+  animation: rainbow 5s infinite;
+  font-family: 'Lobster', cursive;
+}
+
+.mindfulness-text-container {
+  max-height: 250px; /* Adjusted height */
+  overflow-y: auto;
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 70%; /* Adjusted width */
+  padding: 15px; /* Adjusted padding */
+  font-size: 1.2rem;
+  line-height: 1.6;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.paragraph-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pointer {
+  font-weight: bold;
+  color: #888;
+  margin-right: 5px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.navbar a:hover {
+  color: #3494e6;
+}

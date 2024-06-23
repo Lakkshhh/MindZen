@@ -2,6 +2,11 @@
 
 I made this website during WaffleHacks 48 hour marathon. This is made for students to increase their focus and mindfulness through focus sessions, knowledge about mindfulness practices to release stress, and meditation.
 
+Future Prospects I plan to cover:
+
+1. Reduce volume and add more options for the meditation sounds.
+2. Add an AI API and perform prompt engineering so that the users can chat in the Mindfulness Exercises with the customized LLM to gain more information about custom exercises or practices which would personally assist them in their needs related to focus/stress/mindfulness etc.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

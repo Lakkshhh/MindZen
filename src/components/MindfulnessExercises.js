@@ -28,10 +28,10 @@ const MindfulnessExercises = () => {
     {
       number: "3",
       title: "Dishwashing",
-      description: "Yes, you read that right. Hear us out: Instead of doing chores on autopilot, why not use them as opportunities to practice awareness? It’s a small, yet impactful way to check in with yourself, even as you do other tasks, Dr. Urgola says.",
+      description: "Yes, you read that right. Hear me out: Instead of doing chores on autopilot, why not use them as opportunities to practice awareness? It’s a small, yet impactful way to check in with yourself, even as you do other tasks.",
       steps: [
         " --> As you wash the dishes, ask yourself: How warm or cold is the water? How does the sponge feel in my hand? What smells am I experiencing? What’s the texture of the dishes I’m touching?",
-        " --> If your mind drifts off, again, that’s totally okay (and normal). “Your brain is doing what it has evolved to do: think,” says Dr. Urgola. Simply notice the drifting then come back to focusing on the dishes. (You can also do this in the shower, FYI)."
+        " --> If your mind drifts off, again, that’s totally okay (and normal). “Your brain is doing what it has evolved to do: think”. Simply notice the drifting then come back to focusing on the dishes. (You can also do this in the shower, FYI)."
       ]
     },
     {
@@ -42,8 +42,7 @@ const MindfulnessExercises = () => {
         " --> Close your eyes or maintain a soft gaze (again, where your eyes are relaxed and you’re not focusing on anything in particular).",
         " --> Bring your attention to the bottom of your feet, followed by your toes, the tops of your feet, your heels, and your ankles. Notice what you’re sensing in each area—think tightness, coldness, a tingling sensation, or nothing at all—without judging it as good or bad.",
         " --> Move deliberately up your body—to your calves, knees, thighs, hips, etc.—and do the same thing: Notice the physical sensations in each section with curious attention.",
-        " --> When you come to the top of your head, you can either stop or travel back down to your feet again, the same way you came.",
-        " --> Need a little more direction? You can check out the UCSD Center for Mindfulness website for guided body-scan recordings, Dr. Vietan says."
+        " --> When you come to the top of your head, you can either stop or travel back down to your feet again, the same way you came."
       ]
     },
     {
