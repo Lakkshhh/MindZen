@@ -1,0 +1,101 @@
+/* Keyframes for rainbow animation */
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+  }
+  
+  /* Import Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+  
+  /* General body styling */
+  body {
+    background: linear-gradient(to right, #3494e6, #ec6ead); /* Blue gradient background */
+    color: white; /* White text color */
+    font-family: 'Quicksand', sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Container for the entire page */
+  .page-container {
+    position: relative;
+    z-index: 1;
+    background: transparent; /* Ensure transparency */
+  }
+  
+  /* Container for the mindfulness exercises section */
+  .mindfulness-container {
+    text-align: center;
+    padding: 20px;
+    color: black; /* Change text color to black */
+    font-family: 'Roboto', sans-serif; /* Fallback font */
+    margin-top: 60px; /* Adjust margin to accommodate navbar */
+  }
+  
+  /* Title styling */
+  .mindfulness-title {
+    font-size: 3rem; /* Increase font size */
+    margin-bottom: 30px; /* Reduce gap between title and rest of the content */
+    animation: rainbow 5s infinite; /* Apply the rainbow animation */
+    font-family: 'Lobster', cursive; /* Set font family to Lobster */
+  }
+  
+  /* Container for the text section */
+  .mindfulness-text-container {
+    max-height: 300px; /* Set maximum height for scrollable box */
+    overflow-y: auto; /* Enable vertical scrolling */
+    text-align: justify; /* Justify the text */
+    margin: 0 auto; /* Center the container horizontally */
+    max-width: 80%; /* Limit maximum width */
+    padding: 20px; /* Add padding around the text */
+    font-size: 1.2rem; /* Adjust font size */
+    line-height: 1.6; /* Increase line height for better readability */
+    border: 2px solid #ddd; /* Add white border */
+    border-radius: 10px; /* Rounded edges */
+    background-color: #fff; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  /* Heading for each exercise */
+  .paragraph-heading {
+    font-size: 1.3rem; /* Increase heading font size */
+    font-weight: bold; /* Add bold font weight */
+    margin-bottom: 10px; /* Separate heading from the rest of the text */
+  }
+  
+  /* Pointers for each exercise */
+  .pointer {
+    font-weight: bold;
+    color: #888;
+    margin-right: 5px;
+  }
+  
+  /* Navigation bar styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background color */
+    padding: 10px 0; /* Vertical padding */
+    z-index: 100; /* Higher z-index to keep it above other content */
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px; /* Adjusted horizontal margin */
+    font-size: 1.2rem; /* Font size */
+  }
+  
+  .navbar a:hover {
+    color: #3494e6; /* Hover color */
+  }
+  

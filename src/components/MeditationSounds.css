@@ -1,0 +1,55 @@
+.meditation-sounds-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.meditation-sounds-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  animation: rainbow 5s infinite;
+  font-family: 'Lobster', cursive; /* Using Lobster font */
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.sound-button {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  background-color: #ccc; /* Grey background color */
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sound-button:hover {
+  background-color: #bbb; /* Darker grey on hover */
+  transform: scale(1.05);
+}
+
+.meditation-sounds-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.meditation-sounds-list li {
+  font-size: 1.5rem; /* Adjust font size */
+  margin-bottom: 10px; /* Adjust spacing between list items */
+  font-family: 'Roboto', sans-serif; /* Using Roboto font */
+}
+
+@keyframes rainbow {
+  0% { color: red; }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  57% { color: blue; }
+  71% { color: indigo; }
+  85% { color: violet; }
+  100% { color: red; }
+}
