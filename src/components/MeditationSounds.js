@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './MeditationSounds.css'; // Import CSS file for styling
+import './MeditationSounds.css';
 
 const MeditationSounds = () => {
   const [sounds, setSounds] = useState([
@@ -11,7 +11,6 @@ const MeditationSounds = () => {
   ]);
 
   useEffect(() => {
-    // Fetch other sounds from API if needed
     axios.get('/api/meditation-sounds')
       .then(response => setSounds(response.data))
       .catch(error => console.error(error));

@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
-import './FocusSession.css'; // Import CSS file for styling
+import './FocusSession.css'; 
 
 const FocusSession = () => {
-  const [time, setTime] = useState(30 * 60); // Default to 30 minutes
+  const [time, setTime] = useState(30 * 60); 
   const [isActive, setIsActive] = useState(false);
-  const [customTime, setCustomTime] = useState(30); // Default to 30 minutes
-  const [alarmPlayed, setAlarmPlayed] = useState(false); // State to track if alarm has played
-  const [pauseButtonState, setPauseButtonState] = useState(0); // State to track pause button state
-  const [showConfetti, setShowConfetti] = useState(false); // State to control confetti animation
+  const [customTime, setCustomTime] = useState(30); 
+  const [alarmPlayed, setAlarmPlayed] = useState(false);
+  const [pauseButtonState, setPauseButtonState] = useState(0); 
+  const [showConfetti, setShowConfetti] = useState(false); 
 
   const toggle = () => {
     if (pauseButtonState === 0) {
-      setIsActive(true); // Start the timer
+      setIsActive(true); 
       setPauseButtonState(1);
     } else if (pauseButtonState === 1) {
       setPauseButtonState(2);
@@ -29,13 +29,13 @@ const FocusSession = () => {
   const reset = () => {
     setTime(customTime * 60);
     setIsActive(false);
-    setAlarmPlayed(false); // Reset alarm played state
-    setPauseButtonState(0); // Reset pause button state
-    setShowConfetti(false); // Reset confetti state
+    setAlarmPlayed(false); 
+    setPauseButtonState(0); 
+    setShowConfetti(false);
   };
 
   const handleCustomTimeChange = (e) => {
-    const value = parseInt(e.target.value); // Parse selected value as integer
+    const value = parseInt(e.target.value); 
     setCustomTime(value);
     setTime(value * 60);
   };
@@ -51,10 +51,10 @@ const FocusSession = () => {
     }
     if (time === 0 && !alarmPlayed) {
       playAlarm();
-      setAlarmPlayed(true); // Set alarm played state to true after playing once
-      setShowConfetti(true); // Show confetti when timer reaches 0
+      setAlarmPlayed(true); 
+      setShowConfetti(true); 
       setTimeout(() => {
-        setShowConfetti(false); // Hide confetti after 10 seconds
+        setShowConfetti(false); 
       }, 10000);
       setPauseButtonState(0);
     }
@@ -66,7 +66,6 @@ const FocusSession = () => {
     alarm.play();
   };
 
-  // Generate options for select dropdown (0 to 120 minutes with 15-minute intervals)
   const options = [];
   for (let i = 15; i <= 120; i += 15) {
     options.push(<option key={i} value={i}>{i} mins</option>);

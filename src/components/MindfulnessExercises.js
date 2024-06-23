@@ -1,5 +1,5 @@
 import React from 'react';
-import './MindfulnessExercises.css'; // Import your CSS file for styling
+import './MindfulnessExercises.css'; 
 
 const MindfulnessExercises = () => {
   const exercises = [
@@ -105,7 +105,7 @@ const MindfulnessExercises = () => {
                   ))}
                 </ul>
               </p>
-              {index !== exercises.length - 1 && <br />} {/* Add <br /> except after the last exercise */}
+              {index !== exercises.length - 1 && <br />} 
             </div>
           ))}
         </div>

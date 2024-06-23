@@ -12,62 +12,62 @@
 .focus-session-container {
   text-align: center;
   padding: 20px;
-  color: black; /* Change text color to black */
-  font-family: 'Roboto', sans-serif; /* Change to an interesting font */
+  color: black; 
+  font-family: 'Roboto', sans-serif; 
 }
 
 .focus-session-title {
-  font-size: 3rem; /* Increase font size */
-  margin-bottom: 40px; /* Create gap between title and rest of the content */
-  animation: rainbow 5s infinite; /* Apply the rainbow animation */
-  font-family: 'Lobster', cursive; /* Set font family to Lobster */
+  font-size: 3rem; 
+  margin-bottom: 40px; 
+  animation: rainbow 5s infinite;
+  font-family: 'Lobster', cursive; 
 }
 
 .focus-session-timer {
-  margin-bottom: 20px; /* Create gap between elements */
+  margin-bottom: 20px;
 }
 
 .focus-session-label {
-  font-weight: bold; /* Bold text */
-  font-size: 1.5rem; /* Increase font size */
-  margin-right: 10px; /* Add gap between label and select */
+  font-weight: bold;
+  font-size: 1.5rem; 
+  margin-right: 10px; 
 }
 
 .focus-session-select {
   padding: 10px;
-  font-size: 1rem; /* Increase font size */
+  font-size: 1rem; 
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-family: 'Roboto', sans-serif; /* Change to an interesting font */
+  font-family: 'Roboto', sans-serif; 
 }
 
 .focus-session-time {
-  font-size: 2rem; /* Increase font size */
-  margin-bottom: 40px; /* Create gap between time and buttons */
-  font-family: 'Roboto', sans-serif; /* Change to an interesting font */
+  font-size: 2rem; 
+  margin-bottom: 40px; 
+  font-family: 'Roboto', sans-serif;
 }
 
 .focus-session-button {
   padding: 10px 20px;
-  font-size: 1.2rem; /* Increase font size */
+  font-size: 1.2rem; 
   border: none;
   border-radius: 5px;
-  margin: 10px; /* Create gap between buttons */
+  margin: 10px; 
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-family: 'Roboto', sans-serif; /* Change to an interesting font */
+  font-family: 'Roboto', sans-serif; 
   animation: rainbow-border 5s infinite;
-  background-color: #ddd; /* Light grey background */
+  background-color: #ddd;
 }
 
 .focus-session-button:hover {
-  background-color: #ccc; /* Slightly darken on hover */
+  background-color: #ccc;
   transform: scale(1.05);
 }
 
 .start-button, .reset-button {
-  border: 2px solid transparent; /* Initially set border to transparent */
-  transition: border-color 0.3s ease; /* Smooth transition for border color change */
+  border: 2px solid transparent; 
+  transition: border-color 0.3s ease; 
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, red);
   background-size: 200% auto;
   color: white;
@@ -79,7 +79,7 @@
 }
 
 .start-button:hover, .reset-button:hover {
-  border-color: #555; /* Darken border on hover */
+  border-color: #555;
   background-position: right center;
 }
 

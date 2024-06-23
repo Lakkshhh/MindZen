@@ -1,4 +1,3 @@
-/* Keyframes for rainbow animation */
 @keyframes rainbow {
     0% { color: red; }
     14% { color: orange; }
@@ -10,92 +9,84 @@
     100% { color: red; }
   }
   
-  /* Import Google Fonts */
   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
   
-  /* General body styling */
   body {
-    background: linear-gradient(to right, #3494e6, #ec6ead); /* Blue gradient background */
-    color: white; /* White text color */
-    font-family: 'Quicksand', sans-serif; /* Default font */
+    background: linear-gradient(to right, #3494e6, #ec6ead); 
+    color: white; 
+    font-family: 'Quicksand', sans-serif; 
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
   }
   
-  /* Container for the entire page */
   .page-container {
     position: relative;
     z-index: 1;
-    background: transparent; /* Ensure transparency */
+    background: transparent; 
   }
   
-  /* Container for the mindfulness exercises section */
   .mindfulness-container {
     text-align: center;
     padding: 20px;
-    color: black; /* Change text color to black */
-    font-family: 'Roboto', sans-serif; /* Fallback font */
-    margin-top: 60px; /* Adjust margin to accommodate navbar */
+    color: black; 
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 60px; 
   }
   
-  /* Title styling */
   .mindfulness-title {
-    font-size: 3rem; /* Increase font size */
-    margin-bottom: 30px; /* Reduce gap between title and rest of the content */
-    animation: rainbow 5s infinite; /* Apply the rainbow animation */
-    font-family: 'Lobster', cursive; /* Set font family to Lobster */
+    font-size: 3rem; 
+    margin-bottom: 30px; 
+    animation: rainbow 5s infinite; 
+    font-family: 'Lobster', cursive; 
   }
   
-  /* Container for the text section */
   .mindfulness-text-container {
-    max-height: 300px; /* Set maximum height for scrollable box */
-    overflow-y: auto; /* Enable vertical scrolling */
-    text-align: justify; /* Justify the text */
-    margin: 0 auto; /* Center the container horizontally */
-    max-width: 80%; /* Limit maximum width */
-    padding: 20px; /* Add padding around the text */
-    font-size: 1.2rem; /* Adjust font size */
-    line-height: 1.6; /* Increase line height for better readability */
-    border: 2px solid #ddd; /* Add white border */
-    border-radius: 10px; /* Rounded edges */
-    background-color: #fff; /* White background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    max-height: 300px; 
+    overflow-y: auto; 
+    text-align: justify; 
+    margin: 0 auto; 
+    max-width: 80%; 
+    padding: 20px; 
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    background-color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
-  /* Heading for each exercise */
   .paragraph-heading {
-    font-size: 1.3rem; /* Increase heading font size */
-    font-weight: bold; /* Add bold font weight */
-    margin-bottom: 10px; /* Separate heading from the rest of the text */
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
   }
-  
-  /* Pointers for each exercise */
+
   .pointer {
     font-weight: bold;
     color: #888;
     margin-right: 5px;
   }
   
-  /* Navigation bar styling */
+
   .navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background color */
-    padding: 10px 0; /* Vertical padding */
-    z-index: 100; /* Higher z-index to keep it above other content */
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 10px 0; 
+    z-index: 100; 
   }
   
   .navbar a {
     color: white;
     text-decoration: none;
-    margin: 0 10px; /* Adjusted horizontal margin */
-    font-size: 1.2rem; /* Font size */
+    margin: 0 10px; 
+    font-size: 1.2rem; 
   }
   
   .navbar a:hover {
-    color: #3494e6; /* Hover color */
+    color: #3494e6; 
   }
   

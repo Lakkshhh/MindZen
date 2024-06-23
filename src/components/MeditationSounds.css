@@ -7,7 +7,7 @@
   font-size: 3rem;
   margin-bottom: 40px;
   animation: rainbow 5s infinite;
-  font-family: 'Lobster', cursive; /* Using Lobster font */
+  font-family: 'Lobster', cursive;
 }
 
 .button-container {
@@ -19,7 +19,7 @@
 .sound-button {
   padding: 20px 40px;
   font-size: 1.5rem;
-  background-color: #ccc; /* Grey background color */
+  background-color: #ccc; 
   border: none;
   border-radius: 10px;
   margin: 10px;
@@ -28,7 +28,7 @@
 }
 
 .sound-button:hover {
-  background-color: #bbb; /* Darker grey on hover */
+  background-color: #bbb; 
   transform: scale(1.05);
 }
 
@@ -38,9 +38,9 @@
 }
 
 .meditation-sounds-list li {
-  font-size: 1.5rem; /* Adjust font size */
-  margin-bottom: 10px; /* Adjust spacing between list items */
-  font-family: 'Roboto', sans-serif; /* Using Roboto font */
+  font-size: 1.5rem;
+  margin-bottom: 10px; 
+  font-family: 'Roboto', sans-serif;
 }
 
 @keyframes rainbow {
