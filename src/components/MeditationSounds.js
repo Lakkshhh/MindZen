@@ -44,11 +44,15 @@ const MeditationSounds = () => {
     playSound(soundUrl, id);
   };
 
+  // Ensure sounds is an array before slicing and mapping
+  const firstRow = sounds.slice(0, 3);
+  const secondRow = sounds.slice(3, 6);
+
   return (
     <div className="meditation-sounds-container">
       <h2 className="meditation-sounds-title">Meditation Sounds</h2>
       <div className="button-container">
-        {sounds.slice(0, 3).map((sound) => (
+        {firstRow.map((sound) => (
           <button
             key={sound.id}
             className={`sound-button sound-button-${sound.id}`}
@@ -59,7 +63,7 @@ const MeditationSounds = () => {
         ))}
       </div>
       <div className="button-container">
-        {sounds.slice(3, 6).map((sound) => (
+        {secondRow.map((sound) => (
           <button
             key={sound.id}
             className={`sound-button sound-button-${sound.id}`}
