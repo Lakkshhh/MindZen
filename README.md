@@ -1,5 +1,7 @@
 # MindZen
 
+https://mindzen.vercel.app/
+
 I made this website during WaffleHacks 48 hour marathon. This is made for students to increase their focus and mindfulness through focus sessions, knowledge about mindfulness practices to release stress, and meditation.
 
 Future Prospects I plan to cover:
