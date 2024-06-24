@@ -10,7 +10,7 @@ const App = () => (
     <div className="app-container">
       <h1 className="site-title animate-title">MindZen</h1>
       <div className="nav-options animate-buttons">
-        <Link to="/focus-sessions" className="nav-link">Focus Sessions</Link>
+        <Link to="/focus-sessions" className="nav-link">Foc Sessions</Link>
         <Link to="/mindfulness-exercises" className="nav-link">Mindfulness Exercises</Link>
         <Link to="/progress-tracking" className="nav-link">MeditationSounds</Link>
       </div>
