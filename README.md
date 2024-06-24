@@ -4,7 +4,7 @@ I made this website during WaffleHacks 48 hour marathon. This is made for studen
 
 Future Prospects I plan to cover:
 
-1. Reduce volume and add more options for the meditation sounds.
+1. Add a feature to keep track of previous focus sessions which were done by the user.
 2. Add an AI API and perform prompt engineering so that the users can chat in the Mindfulness Exercises with the customized LLM to gain more information about custom exercises or practices which would personally assist them in their needs related to focus/stress/mindfulness etc.
 
 # Getting Started with Create React App
