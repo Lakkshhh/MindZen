@@ -6,6 +6,7 @@ const MeditationSounds = () => {
   const [sounds, setSounds] = useState([]);
   const [currentSound, setCurrentSound] = useState(null);
   const [playingSoundId, setPlayingSoundId] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     axios.get('/api/meditation-sounds')
@@ -13,10 +14,12 @@ const MeditationSounds = () => {
         if (Array.isArray(response.data)) {
           setSounds(response.data);
         } else {
-          console.error('Expected array of sounds, received:', response.data);
+          setError('Invalid response data');
         }
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        setError(error.message);
+      });
   }, []);
 
   const playSound = (soundUrl, id) => {
@@ -31,7 +34,7 @@ const MeditationSounds = () => {
     }
 
     const audio = new Audio(soundUrl);
-    audio.volume = 0.05; 
+    audio.volume = 0.05;
     audio.loop = true;
     audio.play();
     setCurrentSound(audio);
@@ -41,6 +44,10 @@ const MeditationSounds = () => {
   const handleButtonClick = (soundUrl, id) => {
     playSound(soundUrl, id);
   };
+
+  if (error) {
+    return <div className="error-message">{error}</div>;
+  }
 
   return (
     <div className="meditation-sounds-container">
