@@ -4,9 +4,9 @@ import './MeditationSounds.css';
 const MeditationSounds = () => {
   const initialSounds = [
     { id: 1, soundName: "WATER", soundUrl: "https://oddwiring.com/archive/websites/mndev/resources/sounds/Boiling%20and%20Bubbling/de_leau_sur_le_feu.wav" },
-    { id: 2, soundName: "THUNDER", soundUrl: "http://www.ringelkater.de/Sounds/2geraeusche_gegenst/donner.wav" },
-    { id: 3, soundName: "WIND", soundUrl: "http://web.tiscali.it/gherda-wolit/natura/vento.wav" },
-    { id: 4, soundName: "ANIMALS", soundUrl: "http://www.zimba.kaeregaard.dk/lyd/nightdog.wav" },
+    { id: 2, soundName: "THUNDER", soundUrl: "http://www.wetterklima.de/seminar/blitz/blitz_mittelweit.wav" },
+    { id: 3, soundName: "WIND", soundUrl: "http://cd.textfiles.com/cdaction/cdaction27a/FIFTH/WAV/_WIND2.WAV" },
+    { id: 4, soundName: "ANIMALS", soundUrl: "http://cd.textfiles.com/10000gp2/500SNDS/9_38.WAV" },
     { id: 5, soundName: "FIRE", soundUrl: "https://gamekill.cz/cstrike/sound/brn.wav" },
     { id: 6, soundName: "DROPLETS", soundUrl: "https://www.pachd.com/sfx/water_drops2.wav" }
   ];
