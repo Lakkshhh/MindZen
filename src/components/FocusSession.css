@@ -9,6 +9,12 @@
   100% { color: red; }
 }
 
+@keyframes spooky-font {
+  0% { font-family: 'Creepster', cursive; }
+  50% { font-family: 'Zombie', cursive; }
+  100% { font-family: 'Creepster', cursive; }
+}
+
 .focus-session-container {
   text-align: center;
   padding: 20px;
@@ -45,6 +51,7 @@
   font-size: 2rem; 
   margin-bottom: 40px; 
   font-family: 'Roboto', sans-serif;
+  animation: spooky-font 5s infinite;
 }
 
 .focus-session-button {

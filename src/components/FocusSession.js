@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
-import './FocusSession.css'; 
+import './FocusSession.css';
 
 const FocusSession = () => {
   const [time, setTime] = useState(30 * 60); 
@@ -68,7 +68,10 @@ const FocusSession = () => {
 
   const options = [];
   for (let i = 15; i <= 120; i += 15) {
-    options.push(<option key={i} value={i}>{i} mins</option>);
+    const hours = Math.floor(i / 60);
+    const minutes = i % 60;
+    const displayTime = `${hours > 0 ? hours + 'h ' : ''}${minutes}m`;
+    options.push(<option key={i} value={i}>{displayTime}</option>);
   }
 
   let pauseButtonText = '';
@@ -84,24 +87,30 @@ const FocusSession = () => {
     pauseButtonText = 'Valid reason? If not, don\'t FALTER SOLDIER!!!';
   }
 
+  const formatTime = (totalSeconds) => {
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+    return `${hours > 0 ? hours + 'h ' : ''}${minutes}m ${seconds}s`;
+  };
+
   return (
     <div className="focus-session-container">
       <h2 className="focus-session-title">Focus Session</h2>
       <div className="focus-session-timer">
-        <label className="focus-session-label">Set Timer (minutes): </label>
+        <label className="focus-session-label">Set Timer: </label>
         <select value={customTime} onChange={handleCustomTimeChange} className="focus-session-select">
           {options}
         </select>
       </div>
-      <div className="focus-session-time">{`${Math.max(Math.floor(time / 60), 0)}:${Math.max(time % 60, 0) < 10 ? '0' : ''}${Math.max(time % 60, 0)}`}</div>
+      <div className={`focus-session-time ${showConfetti ? 'show-confetti' : ''}`}>
+        {formatTime(time)}
+      </div>
       <button onClick={toggle} className="focus-session-button start-button">{pauseButtonText}</button>
       <button onClick={reset} className="focus-session-button reset-button">Reset</button>
-      {showConfetti && <Confetti />}
+      {time === 0 && showConfetti && <Confetti />}
     </div>
   );
 };
 
 export default FocusSession;
-
-
-
