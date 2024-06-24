@@ -17,7 +17,13 @@ const MeditationSounds = () => {
 
   useEffect(() => {
     axios.get('/api/meditation-sounds')
-      .then(response => setSounds(response.data))
+      .then(response => {
+        if (Array.isArray(response.data)) {
+          setSounds(response.data); // Ensure response.data is an array
+        } else {
+          console.error('Invalid data received:', response.data);
+        }
+      })
       .catch(error => console.error(error));
   }, []);
 
